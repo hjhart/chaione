@@ -34,7 +34,7 @@ class RomanNumerals
     elsif (remainder == 4)
       roman_numeral += 'IV'
       remainder = remainder - 4
-    elsif (remainder <= 3)
+    else
       roman_numeral += 'I' * remainder
       remainder = 0
     end
