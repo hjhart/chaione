@@ -71,4 +71,28 @@ describe RomanNumerals do
   it 'should convert 100 to C' do
     RomanNumerals.convert(100).should eq 'C'
   end
+
+  it 'should convert 499 to D' do
+    RomanNumerals.convert(499).should eq 'ID'
+  end
+
+  it 'should convert 500 to D' do
+    RomanNumerals.convert(500).should eq 'D'
+  end
+
+  it 'should convert 999 to M' do
+    RomanNumerals.convert(999).should eq 'IM'
+  end
+
+  it 'should convert 1000 to M' do
+    RomanNumerals.convert(1000).should eq 'M'
+  end
+
+  it 'should convert 2000 to MM' do
+    RomanNumerals.convert(2000).should eq 'MM'
+  end
+
+  it 'should convert 1999 to M' do
+    RomanNumerals.convert(1999).should eq 'MIM'
+  end
 end

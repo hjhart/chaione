@@ -11,6 +11,14 @@ class RomanNumerals
 
   def self.roman_numerals
     [{
+         number: 1000,
+         letter: 'M'
+     },
+     {
+         number: 500,
+         letter: 'D'
+     },
+     {
          number: 100,
          letter: 'C'
      },
