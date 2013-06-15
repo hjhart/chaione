@@ -52,7 +52,23 @@ describe RomanNumerals do
     RomanNumerals.convert(29).should eq 'XXIX'
   end
 
+  it 'should convert 49 to IL' do
+    RomanNumerals.convert(49).should eq 'IL'
+  end
+
   it 'should convert 50 to L' do
     RomanNumerals.convert(50).should eq 'L'
+  end
+
+  it 'should convert 59 to LIX' do
+    RomanNumerals.convert(59).should eq 'LIX'
+  end
+
+  it 'should convert 99 to IC' do
+    RomanNumerals.convert(99).should eq 'IC'
+  end
+
+  it 'should convert 100 to C' do
+    RomanNumerals.convert(100).should eq 'C'
   end
 end
