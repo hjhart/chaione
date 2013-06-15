@@ -88,11 +88,15 @@ describe RomanNumerals do
     RomanNumerals.convert(1000).should eq 'M'
   end
 
+  it 'should convert 1999 to M' do
+    RomanNumerals.convert(1999).should eq 'MIM'
+  end
+
   it 'should convert 2000 to MM' do
     RomanNumerals.convert(2000).should eq 'MM'
   end
 
-  it 'should convert 1999 to M' do
-    RomanNumerals.convert(1999).should eq 'MIM'
+  it 'should convert 10000 to MMMMMMMMMM' do
+    RomanNumerals.convert(10000).should eq 'MMMMMMMMMM'
   end
 end
