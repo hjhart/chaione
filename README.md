@@ -1,6 +1,6 @@
 ## Setup
 
-    git clone git@github.com:hjhart/grunt-imagemagick.git
+    git clone git@github.com:hjhart/chaione.git
     bundle install
 
 ## Running the specs
