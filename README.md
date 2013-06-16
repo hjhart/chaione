@@ -5,7 +5,7 @@
 
 ## Running the specs
 
-    rspec spec --color
+    RUBY_ENV=test && rspec spec --color
 
 ## Running the most active contributors scripts
 
@@ -18,4 +18,4 @@ Note: You may get a 403 unauthorized message – if so:
 ## Printing the app.net global messages
 
     export RUBYLIB=`pwd`/lib                        # to set the ruby library path to this project only
-    ruby -r api_net_message_feed -e 'ApiNetMessageFeed.new.execute'
+    ruby -r app_net_messages_feed -e 'AppNetMessagesFeed.new.execute'
