@@ -1,4 +1,4 @@
-class ApiNetMessage
+class AppNetMessage
   def initialize(attributes)
     @attributes = attributes
   end

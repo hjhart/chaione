@@ -1,7 +1,7 @@
 require 'rspec'
-require 'api_net_message'
+require 'app_net_message'
 
-describe ApiNetMessage do
+describe AppNetMessage do
   let(:json_snippet) {
     {
         'text' => "whatever you want it to be",
@@ -14,7 +14,7 @@ describe ApiNetMessage do
     }
   }
 
-  subject { ApiNetMessage.new(json_snippet) }
+  subject { AppNetMessage.new(json_snippet) }
 
   it "has message and username as attributes" do
     subject.username.should eq "@hjhart"
