@@ -1,8 +1,8 @@
 require 'json'
 require 'app_net_message'
+require 'open-uri'
 
 class AppNetMessagesFeed
-  require 'open-uri'
   def execute
     json_data = JSON.parse(retrieve_feed)
     json_data['data'].each do |json_entry|
