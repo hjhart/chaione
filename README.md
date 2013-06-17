@@ -5,7 +5,7 @@
 
 ## Running the specs
 
-    RUBY_ENV=test && rspec spec --color
+     export RUBY_ENV=test && rspec spec --color
 
 ## Running the most active contributors scripts
 
